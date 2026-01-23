@@ -1,0 +1,4282 @@
+{
+    "actionType": "APPEND",
+    "entities": [
+        {
+            "id": "urn:ngsi-ld:Building:Building-Block-A",
+            "type": "Building",
+            "category": {
+                "type": "Property",
+                "value": "commercial"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "51 Strauss Avenue ",
+                    "addressRegion": "The Orchards",
+                    "addressLocality": "Akasia, South Africa",
+                    "postalCode": "0152"
+                },
+                "metadata": {}
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            28.089622,
+                            -25.65222
+                        ],
+                        [
+                            28.09314,
+                            -25.6528
+                        ],
+                        [
+                            28.093762,
+                            -25.654328
+                        ],
+                        [
+                            28.092561,
+                            -25.655392
+                        ],
+                        [
+                            28.090116,
+                            -25.654986
+                        ],
+                        [
+                            28.088743,
+                            -25.653497
+                        ],
+                        [
+                            28.089622,
+                            -25.65222
+                        ]
+                    ]
+                },
+                "metadata": {}
+            },
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Human Resource",
+                "metadata": {}
+            },
+            "locatedIn": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Address:address-11"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Department:dept-01",
+            "type": "Address",
+            "manager": {
+                "type": "Property",
+                "value": "Piet Bo"
+            },
+            "email": {
+                "type": "Property",
+                "value": "bopiet@gde.gov.za"
+            },
+            "department": {
+                "type": "Property",
+                "value": "Human Resource"
+            },
+            "locatedIn": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-A"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-119",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Moses"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Gadebe"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "male"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "012 111 2222"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "12 van eck ",
+                    "addressRegion": "The Orchards",
+                    "addressLocality": "Akasia, South Africa",
+                    "postalCode": "0152"
+                },
+                "metadata": {}
+            },
+            "email": {
+                "type": "Property",
+                "value": "gadebeml@gade.gov.za"
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-01"
+            },
+            "refBuilding": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-A"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-1",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        28.087865,
+                        -25.6335088
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-119"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Department:dept-01",
+            "type": "Address",
+            "manager": {
+                "type": "Property",
+                "value": "Piet Bo"
+            },
+            "email": {
+                "type": "Property",
+                "value": "bopiet@gde.gov.za"
+            },
+            "department": {
+                "type": "Property",
+                "value": "Human Resource"
+            },
+            "locatedIn": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-A"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-120",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Thulani"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Nkuna"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "male"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "012 020 1140"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "51 Litsele Street ",
+                    "addressRegion": "Ga-Rankua",
+                    "addressLocality": "Mabopane, South Africa",
+                    "postalCode": "0155"
+                },
+                "metadata": {}
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-01"
+            },
+            "email": {
+                "type": "Property",
+                "value": "tnkuna@gade.gov.za"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-2",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        28.008671,
+                        -25.587464
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-120"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-121",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Robert"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Mofo"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "male"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "012 111 6512"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "51 Strauss Avenue ",
+                    "addressRegion": "The Orchards",
+                    "addressLocality": "Akasia, South Africa",
+                    "postalCode": "0152"
+                },
+                "metadata": {}
+            },
+            "email": {
+                "type": "Property",
+                "value": "rmofo@gade.gov.za"
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-01"
+            },
+            "refBuilding": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-A"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-3",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        28.059224,
+                        -25.560637
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-121"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-122",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Connie"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Mooko"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "male"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "012 111 6512"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "5 thlale Street",
+                    "addressRegion": "Mabopane",
+                    "addressLocality": "Mabopane, South Africa",
+                    "postalCode": "0152"
+                },
+                "metadata": {}
+            },
+            "email": {
+                "type": "Property",
+                "value": "cmooko@gade.gov.za"
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-01"
+            },
+            "refBuilding": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-A"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-4",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        28.069469,
+                        -25.504715
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-122"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-125",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Janes"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Nape"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "male"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "012 111 6563"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "11 Main Road ",
+                    "addressRegion": "Cullinan",
+                    "addressLocality": "Pretoria, South Africa",
+                    "postalCode": "0025"
+                },
+                "metadata": {}
+            },
+            "email": {
+                "type": "Property",
+                "value": "jnape@gade.gov.za"
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-01"
+            },
+            "refBuilding": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-A"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-5",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        28.52626,
+                        -25.67013
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-125"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Building:Building-Block-B",
+            "type": "Building",
+            "category": {
+                "type": "Property",
+                "value": "commercial"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "401 Dickens St",
+                    "addressRegion": "Kempton park",
+                    "addressLocality": "Gauteng",
+                    "postalCode": "1619"
+                },
+                "metadata": {}
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            28.233192,
+                            -26.094864
+                        ],
+                        [
+                            28.231798,
+                            -26.095442
+                        ],
+                        [
+                            28.232055,
+                            -26.097369
+                        ],
+                        [
+                            28.23242,
+                            -26.097832
+                        ],
+                        [
+                            28.236431,
+                            -26.097042
+                        ],
+                        [
+                            28.235166,
+                            -26.095172
+                        ],
+                        [
+                            28.233192,
+                            -26.094864
+                        ]
+                    ]
+                },
+                "metadata": {}
+            },
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_IT_WiFi"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Information Technology",
+                "metadata": {}
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Department:dept-02",
+            "type": "Address",
+            "manager": {
+                "type": "Property",
+                "value": "Nakedi Di"
+            },
+            "email": {
+                "type": "Property",
+                "value": "dinadeki@gde.gov.za"
+            },
+            "department": {
+                "type": "Property",
+                "value": "Information Technology"
+            },
+            "locatedIn": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-B"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-126",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Clifton"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Keller"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "Female"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "0311011560"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "302 Singh Street",
+                    "addressRegion": "Actonville",
+                    "addressLocality": "Benoni, South Africa",
+                    "postalCode": "5101"
+                },
+                "metadata": {}
+            },
+            "email": {
+                "type": "Property",
+                "value": "CliftonK@gauteng.gov.za"
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-02"
+            },
+            "refBuilding": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-B"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-6",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        -26.2106983,
+                        28.3011284
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-126"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-127",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Dustin"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Brewer"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "male"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "0113342368"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "15 Mac Mac Street",
+                    "addressRegion": "Sandton",
+                    "addressLocality": "Johannesburg, South Africa",
+                    "postalCode": "2066"
+                },
+                "metadata": {}
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-02"
+            },
+            "email": {
+                "type": "Property",
+                "value": "DustinB@gauteng.gov.za"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-7",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        -26.1853203,
+                        27.9971831
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-127"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-128",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Bettie"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "McDaniel"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "Female"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "0319803417"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "424B Phiriphiri Street",
+                    "addressRegion": "Meadowlands West",
+                    "addressLocality": "Soweto, South Africa",
+                    "postalCode": "1852"
+                },
+                "metadata": {}
+            },
+            "email": {
+                "type": "Property",
+                "value": "BettieM@gauteng.gov.za"
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-02"
+            },
+            "refBuilding": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-B"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-8",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        -26.2257336,
+                        27.8921989
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-128"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-129",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Basil"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Gill"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "Male"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "031 898 2288"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "49 Crossberry Crescent",
+                    "addressRegion": "Sandton",
+                    "addressLocality": "Johannesburg, South Africa",
+                    "postalCode": "1645"
+                },
+                "metadata": {}
+            },
+            "email": {
+                "type": "Property",
+                "value": "BasilG@gauteng.gov.za"
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-02"
+            },
+            "refBuilding": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-B"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-9",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        -26.1167735,
+                        28.1604038
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-129"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-130",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Lupe"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Whitney"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "Female"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "021 787 1762"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "40 Fulton Street",
+                    "addressRegion": "Tulisa",
+                    "addressLocality": "Johannesburg, South Africa",
+                    "postalCode": "2001"
+                },
+                "metadata": {}
+            },
+            "email": {
+                "type": "Property",
+                "value": "LupeW@gauteng.gov.za"
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-02"
+            },
+            "refBuilding": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-B"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-10",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        -26.2529665,
+                        28.1012927
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-130"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Building:Building-Block-C",
+            "type": "Building",
+            "category": {
+                "type": "Property",
+                "value": "commercial"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "420 Crown St",
+                    "addressRegion": "Carletonville",
+                    "addressLocality": "Gauteng, South Africa",
+                    "postalCode": "2500"
+                },
+                "metadata": {}
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            27.401538,
+                            -26.359051
+                        ],
+                        [
+                            27.399136,
+                            -26.360762
+                        ],
+                        [
+                            27.398943,
+                            -26.362839
+                        ],
+                        [
+                            27.401431,
+                            -26.363512
+                        ],
+                        [
+                            27.403683,
+                            -26.363396
+                        ],
+                        [
+                            27.404949,
+                            -26.360916
+                        ],
+                        [
+                            27.401538,
+                            -26.359051
+                        ]
+                    ]
+                },
+                "metadata": {}
+            },
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_Finance_WiFi"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Finance",
+                "metadata": {}
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Department:dept-03",
+            "type": "Address",
+            "manager": {
+                "type": "Property",
+                "value": "Hans Di"
+            },
+            "email": {
+                "type": "Property",
+                "value": "dihans@gde.gov.za"
+            },
+            "department": {
+                "type": "Property",
+                "value": "Finance"
+            },
+            "locatedIn": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-C"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-131",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Buster"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Koch"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "male"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "0219091276"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "445 Marconi St",
+                    "addressRegion": "Westonaria",
+                    "addressLocality": "Gauteng, South Africa",
+                    "postalCode": "1787"
+                },
+                "metadata": {}
+            },
+            "email": {
+                "type": "Property",
+                "value": "BusterK@gauteng.gov.za"
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-03"
+            },
+            "refBuilding": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-C"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-11",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        -26.3177778,
+                        27.6519444
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-131"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-132",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Alonzo"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Meyers"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "Female"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "0113234529"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "172 Glyn St",
+                    "addressRegion": "Pretoria",
+                    "addressLocality": "Gauteng, South Africa",
+                    "postalCode": "1166"
+                },
+                "metadata": {}
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-03"
+            },
+            "email": {
+                "type": "Property",
+                "value": "AlonzoM@gauteng.gov.za"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-12",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        -25.7463378,
+                        28.2434242
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-132"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-133",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Sylvester"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Mejia"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "Male"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "0217492234"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "438 Bodenstein St",
+                    "addressRegion": "Boksburg",
+                    "addressLocality": "Gauteng, South Africa",
+                    "postalCode": "1460"
+                },
+                "metadata": {}
+            },
+            "email": {
+                "type": "Property",
+                "value": "SylvesterM@gauteng.gov.za"
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-03"
+            },
+            "refBuilding": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-C"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-13",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        -26.2124639,
+                        28.2617471
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-133"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-134",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Allyson"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Baldwin"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "Female"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "0416571234"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "2056 Schoeman St",
+                    "addressRegion": "Garsfontein",
+                    "addressLocality": "Gauteng, South Africa",
+                    "postalCode": "0081"
+                },
+                "metadata": {}
+            },
+            "email": {
+                "type": "Property",
+                "value": "AllysonB@gauteng.gov.za"
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-03"
+            },
+            "refBuilding": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-C"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-14",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        -25.7944444,
+                        28.3
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-134"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-135",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Jefferson"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Stark"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "male"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "0112231762"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "1305 Broad Rd",
+                    "addressRegion": "Krugersdorp",
+                    "addressLocality": "Gauteng",
+                    "postalCode": "1933"
+                },
+                "metadata": {}
+            },
+            "email": {
+                "type": "Property",
+                "value": "JeffersonS@gauteng.gov.za"
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-03"
+            },
+            "refBuilding": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-C"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-15",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        -26.095556,
+                        27.775556
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-135"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Building:Building-Block-D",
+            "type": "Building",
+            "category": {
+                "type": "Property",
+                "value": "commercial"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "2315 Derby Ave",
+                    "addressRegion": "Florida",
+                    "addressLocality": "Gauteng",
+                    "postalCode": "1711"
+                },
+                "metadata": {}
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Polygon",
+                    "coordinates": [
+                        [
+                            -81.5084,
+                            28.665911
+                        ],
+                        [
+                            -81.510395,
+                            28.664197
+                        ],
+                        [
+                            -81.5087,
+                            28.662522
+                        ],
+                        [
+                            -81.506748,
+                            28.662691
+                        ],
+                        [
+                            -81.506319,
+                            28.664103
+                        ],
+                        [
+                            -81.506641,
+                            28.665101
+                        ],
+                        [
+                            -81.5084,
+                            28.665911
+                        ]
+                    ]
+                },
+                "metadata": {}
+            },
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_Procurement_WiFi"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Procurement",
+                "metadata": {}
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Department:dept-04",
+            "type": "Address",
+            "manager": {
+                "type": "Property",
+                "value": "Hans Ba"
+            },
+            "email": {
+                "type": "Property",
+                "value": "bahans@gde.gov.za"
+            },
+            "department": {
+                "type": "Property",
+                "value": "Finance"
+            },
+            "locatedIn": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-D"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-136",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Ruth"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Clay"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "Female"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "0319032389"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "1170 Diesel Street",
+                    "addressRegion": "Bekkersdal",
+                    "addressLocality": "Gauteng, South Africa",
+                    "postalCode": "1779"
+                },
+                "metadata": {}
+            },
+            "email": {
+                "type": "Property",
+                "value": "RuthC@gauteng.gov.za"
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-04"
+            },
+            "refBuilding": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-D"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-16",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        -26.2822222,
+                        27.7013889
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-136"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-137",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Rusty"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Melton"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "male"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "03190822376"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "107 Bodenstein St",
+                    "addressRegion": "Boksburg",
+                    "addressLocality": "Gauteng",
+                    "postalCode": "1460"
+                },
+                "metadata": {}
+            },
+            "email": {
+                "type": "Property",
+                "value": "RustyM@gauteng.gov.za"
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-04"
+            },
+            "refBuilding": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-D"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-17",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        -26.2124639,
+                        28.2617471
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-137"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-138",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Colby"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Donovan"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "Female"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "0318984352"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "2068 Wolmarans St",
+                    "addressRegion": "Sandton",
+                    "addressLocality": "Gauteng, South Africa",
+                    "postalCode": "2001"
+                },
+                "metadata": {}
+            },
+            "email": {
+                "type": "Property",
+                "value": "ColdbyD@office.com"
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-04"
+            },
+            "refBuilding": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-D"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-18",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        -26.194788,
+                        28.0448741
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-138"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-139",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Tyrone"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Stanton"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "male"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "0622176528"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "775 Bodenstein St",
+                    "addressRegion": " Alberton",
+                    "addressLocality": "Gauteng",
+                    "postalCode": "1454"
+                },
+                "metadata": {}
+            },
+            "email": {
+                "type": "Property",
+                "value": "TyroneS@toyota.com"
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-04"
+            },
+            "refBuilding": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-D"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-19",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        -26.2669894,
+                        28.1220546
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-139"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Employee:Emp-140",
+            "type": "Employee",
+            "name": {
+                "type": "Property",
+                "value": "Sallie"
+            },
+            "firstName": {
+                "type": "Property",
+                "value": "Blanchard"
+            },
+            "gender": {
+                "type": "Property",
+                "value": "Female"
+            },
+            "telephone": {
+                "type": "Property",
+                "value": "0321264397"
+            },
+            "address": {
+                "type": "Property",
+                "value": {
+                    "streetAddress": "731 Broad Rd",
+                    "addressRegion": "Vanderbijlpark",
+                    "addressLocality": "Gauteng",
+                    "postalCode": "1902"
+                },
+                "metadata": {}
+            },
+            "email": {
+                "type": "Property",
+                "value": "SallieB@gauteng.gov.za"
+            },
+            "refDepartment": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Department:dept-04"
+            },
+            "refBuilding": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Building:Building-Block-D"
+            }
+        },
+        {
+            "id": "urn:ngsi-ld:Smartphone:SMT-20",
+            "type": "Smartphone",
+            "ssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "bssid": {
+                "type": "Property",
+                "value": "GDE_HR_WiFi"
+            },
+            "activity": {
+                "type": "Property",
+                "value": "nan"
+            },
+            "name": {
+                "type": "Property",
+                "value": "Samsung A60"
+            },
+            "website": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "visitduration": {
+                "type": "Property",
+                "value": "www.tyt.co.za"
+            },
+            "callType": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "callduration": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "phoneNumber": {
+                "type": "Property",
+                "value": "0730005555"
+            },
+            "location": {
+                "type": "GeoProperty",
+                "value": {
+                    "type": "Point",
+                    "coordinates": [
+                        -26.706891,
+                        27.836271
+                    ]
+                },
+                "metadata": {}
+            },
+            "refEmployee": {
+                "type": "Relationship",
+                "value": "urn:ngsi-ld:Employee:Emp-140"
+            }
+        }
+    ]
+}
+
+
+
+
+#############2lac ended here-D#############
+
+################################################
+#############2lac ended here-E#############
+
+{
+  "id": "urn:ngsi-ld:Building:Building-Block-E",
+  "type": "Building",
+  "category": 
+   {
+    "type": "Property",
+    "value": "Commercial"
+   },
+  "address": 
+   {
+    "type": "Property",
+     "value": {
+                "streetAddress": "177 Hoog St",
+                "addressRegion": "Germiston",
+                "addressLocality": "Gauteng",
+                "postalCode": "1497"
+            },
+            "metadata": {}
+    }
+    ,
+    "location": 
+    {
+      "type": "GeoProperty",
+      "value": 
+       {
+       "type": "Polygon",
+       "coordinates":
+        
+      [[28.18028 -26.227812,28.178865 -26.228544,28.179079 -26.229737,28.180388 -26.23068,28.181975 -26.230276,28.182061 -26.228544,28.18028 -26.227812]]
+       },
+      "metadata": {}
+    },
+    "ssid":
+    {
+        "type": "Property",
+        "value":"GDE_Transport_WiFi"
+    },
+    "name":
+    {
+      "type": "Property",
+      "value": "Transport",
+      "metadata": {}
+    }
+}
+################################################
+ {
+   "id": "urn:ngsi-ld:Department:dept-05",
+  "type": "Address",
+  "manager": {
+    "type": "Property",
+    "value": "Leslie Nooko"
+  },
+  "email": {
+    "type": "Property",
+    "value": "nookoleslie@gde.gov.za"
+  },
+  "department": {
+    "type": "Property",
+    "value": "Finance"
+  },
+  "locatedIn": 
+	 {
+	  "type": "Relationship",
+	  "value": "urn:ngsi-ld:Building:Building-Block-E"
+	  }	
+  }
+####################################
+{
+  "id": "urn:ngsi-ld:Employee:Emp-136",
+  "type": "Employee",
+  "name": {
+    "type": "Property",
+    "value": "Plabo"
+  },
+  "firstName": {
+    "type": "Property",
+    "value": "Mario"
+  },
+  "gender": {
+    "type": "Property",
+    "value": "male"
+  },
+  "telephone": {
+    "type": "Property",
+    "value": "0319032389"
+  },
+ "address": 
+   {
+    "type": "Property",
+     "value": {
+                 "streetAddress": "570 Wit Rd",
+                 "addressRegion": "Strathavon",
+                 "addressLocality": "Gauteng",
+                 "postalCode": "2031"
+             },
+            "metadata": {}
+    }
+    ,  
+  "email": {
+  "type": "Property",
+  "value": "PabloM@gauteng.gov.za"
+  },"refDepartment": 
+	 {
+	  "type": "Relationship",
+	  "value": "urn:ngsi-ld:Department:dept-05"
+	  } ,
+	"refBuilding": 
+	 {
+	  "type": "Relationship",
+	  "value": "urn:ngsi-ld:Building:Building-Block-E"
+	  }
+  }
+
+  ###########################################################
+  {
+  "id": "urn:ngsi-ld:Smartphone:SMT-21",
+  "type": "Smartphone",
+ "ssid": {
+    "type": "Property",
+    "value": "GDE_HR_WiFi"
+  },
+  "bssid": {
+    "type": "Property",
+    "value": "GDE_HR_WiFi"
+  },
+   "name": {
+    "type": "Property",
+    "value": "Samsung A60"
+  },
+  "website": {
+    "type": "Property",
+    "value": "www.tyt.co.za"
+  },
+  "visitduration": {
+    "type": "Property",
+    "value": "www.tyt.co.za"
+  },
+  "callType": {
+    "type": "Property",
+    "value": "0730005555"
+  } ,
+  "callduration": {
+    "type": "Property",
+    "value": "0730005555"
+  },
+  "phoneNumber": {
+    "type": "Property",
+    "value": "0730005555"
+  },
+  "location": 
+    {
+      "type": "GeoProperty",
+      "value": 
+       {
+       "type": "Point",
+       "coordinates":
+          [
+           -26.0950000,28.0700000
+          ]
+      },
+      "metadata": {}
+   },
+	"refEmployee": 
+	 {
+	  "type": "Relationship",
+	  "value": "urn:ngsi-ld:Employee:Emp-136"
+	  }
+}
+
+####################################
+{
+  "id": "urn:ngsi-ld:Employee:Emp-137",
+  "type": "Employee",
+  "name": {
+    "type": "Property",
+    "value": "Truman"
+  },
+  "firstName": {
+    "type": "Property",
+    "value": "Garaza"
+  },
+  "gender": {
+    "type": "Property",
+    "value": "male"
+  },
+  "telephone": {
+    "type": "Property",
+    "value": "03190822376"
+  },
+ "address": 
+   {
+    "type": "Property",
+     "value": {
+                 "streetAddress": "2160 Amos St",
+                 "addressRegion": "Hammanskraal",
+                 "addressLocality": "Gauteng",
+                 "postalCode": "0400"
+             },
+            "metadata": {}
+    }
+    ,  
+  "email": {
+  "type": "Property",
+  "value": "TrumAN@gauteng.gov.za"
+  }
+  }
+
+  ###########################################################
+  {
+  "id": "urn:ngsi-ld:Smartphone:SMT-22",
+  "type": "Smartphone",
+ "ssid": {
+    "type": "Property",
+    "value": "GDE_HR_WiFi"
+  },
+  "bssid": {
+    "type": "Property",
+    "value": "GDE_HR_WiFi"
+  },
+   "name": {
+    "type": "Property",
+    "value": "Samsung A60"
+  },
+  "website": {
+    "type": "Property",
+    "value": "www.tyt.co.za"
+  },
+  "visitduration": {
+    "type": "Property",
+    "value": "www.tyt.co.za"
+  },
+  "callType": {
+    "type": "Property",
+    "value": "0730005555"
+  } ,
+  "callduration": {
+    "type": "Property",
+    "value": "0730005555"
+  },
+  "phoneNumber": {
+    "type": "Property",
+    "value": "0730005555"
+  },
+  "location": 
+    {
+      "type": "GeoProperty",
+      "value": 
+       {
+       "type": "Point",
+       "coordinates":
+          [
+           -25.4083333,28.2872222
+          ]
+      },
+      "metadata": {}
+   },
+	"refEmployee": 
+	 {
+	  "type": "Relationship",
+	  "value": "urn:ngsi-ld:Employee:Emp-137"
+	  }
+}
+
+####################################
+{
+  "id": "urn:ngsi-ld:Employee:Emp-138",
+  "type": "Employee",
+  "name": {
+    "type": "Property",
+    "value": "Debra"
+  },
+  "firstName": {
+    "type": "Property",
+    "value": "Olson"
+  },
+  "gender": {
+    "type": "Property",
+    "value": "Female"
+  },
+  "telephone": {
+    "type": "Property",
+    "value": "0318984352"
+  },
+ "address": 
+   {
+    "type": "Property",
+     "value": {
+                 "streetAddress": "1748 Market St",
+                 "addressRegion": "Jukskeipark",
+                 "addressLocality": "Gauteng",
+                 "postalCode": "2164"
+             },
+            "metadata": {}
+    }
+    ,  
+  "email": {
+  "type": "Property",
+  "value": "DebraO@office.com"
+  },
+	"refBuilding": 
+	 {
+	  "type": "Relationship",
+	  "value": "urn:ngsi-ld:Building:Building-Block-E"
+	  }
+  }
+
+  ###########################################################
+  {
+  "id": "urn:ngsi-ld:Smartphone:SMT-23",
+  "type": "Smartphone",
+  "ssid": {
+    "type": "Property",
+    "value": "GDE_HR_WiFi"
+  },
+  "bssid": {
+    "type": "Property",
+    "value": "GDE_HR_WiFi"
+  },
+   "name": {
+    "type": "Property",
+    "value": "Samsung A60"
+  },
+  "website": {
+    "type": "Property",
+    "value": "www.tyt.co.za"
+  },
+  "visitduration": {
+    "type": "Property",
+    "value": "www.tyt.co.za"
+  },
+  "callType": {
+    "type": "Property",
+    "value": "0730005555"
+  } ,
+  "callduration": {
+    "type": "Property",
+    "value": "0730005555"
+  },
+  "phoneNumber": {
+    "type": "Property",
+    "value": "0730005555"
+  },
+  "location": 
+    {
+      "type": "GeoProperty",
+      "value": 
+       {
+       "type": "Point",
+       "coordinates":
+          [
+           -26.0294337,27.9768211
+          ]
+      },
+      "metadata": {}
+   },
+	"refEmployee": 
+	 {
+	  "type": "Relationship",
+	  "value": "urn:ngsi-ld:Employee:Emp-138"
+	  }
+}
+####################################
+{
+  "id": "urn:ngsi-ld:Employee:Emp-139",
+  "type": "Employee",
+  "name": {
+    "type": "Property",
+    "value": "Terrance"
+  },
+  "firstName": {
+    "type": "Property",
+    "value": "Rogers"
+  },
+  "gender": {
+    "type": "Property",
+    "value": "male"
+  },
+  "telephone": {
+    "type": "Property",
+    "value": "0622176528"
+  },
+ "address": 
+   {
+    "type": "Property",
+     "value": {
+                 "streetAddress": "2172 Schoeman St",
+                 "addressRegion": "Pretoria",
+                 "addressLocality": "Gauteng",
+                 "postalCode": "0080"
+             },
+            "metadata": {}
+    }
+    ,  
+  "email": {
+  "type": "Property",
+  "value": "TerranceR@toyota.com"
+  },
+	"refBuilding": 
+	 {
+	  "type": "Relationship",
+	  "value": "urn:ngsi-ld:Building:Building-Block-E"
+	  }
+  }
+
+  ###########################################################
+  {
+  "id": "urn:ngsi-ld:Smartphone:SMT-24",
+  "type": "Smartphone",
+  "ssid": {
+    "type": "Property",
+    "value": "GDE_HR_WiFi"
+  },
+  "bssid": {
+    "type": "Property",
+    "value": "GDE_HR_WiFi"
+  },
+   "name": {
+    "type": "Property",
+    "value": "Samsung A60"
+  },
+  "website": {
+    "type": "Property",
+    "value": "www.tyt.co.za"
+  },
+  "visitduration": {
+    "type": "Property",
+    "value": "www.tyt.co.za"
+  },
+  "callType": {
+    "type": "Property",
+    "value": "0730005555"
+  } ,
+  "callduration": {
+    "type": "Property",
+    "value": "0730005555"
+  },
+  "phoneNumber": {
+    "type": "Property",
+    "value": "0730005555"
+  },
+  "location": 
+    {
+      "type": "GeoProperty",
+      "value": 
+       {
+       "type": "Point",
+       "coordinates":
+          [
+           -25.7499707,28.1803542
+          ]
+      },
+      "metadata": {}
+   },
+	"refEmployee": 
+	 {
+	  "type": "Relationship",
+	  "value": "urn:ngsi-ld:Employee:Emp-139"
+	  }
+}
+####################################
+{
+  "id": "urn:ngsi-ld:Employee:Emp-140",
+  "type": "Employee",
+  "name": {
+    "type": "Property",
+    "value": "Clemente"
+  },
+  "firstName": {
+    "type": "Property",
+    "value": "Harris"
+  },
+  "gender": {
+    "type": "Property",
+    "value": "male"
+  },
+  "telephone": {
+    "type": "Property",
+    "value": "0321264397"
+  },
+ "address": 
+   {
+    "type": "Property",
+     "value": {
+                 "streetAddress": "2024 President St",
+                 "addressRegion": "Johannesburg",
+                 "addressLocality": "Gauteng",
+                 "postalCode": "2100"
+             },
+            "metadata": {}
+    }
+    ,  
+  "email": {
+  "type": "Property",
+  "value": "ClementeH@gauteng.gov.za"
+  },
+	"refBuilding": 
+	 {
+	  "type": "Relationship",
+	  "value": "urn:ngsi-ld:Building:Building-Block-E"
+	  }
+  }
+
+  ###########################################################
+  {
+  "id": "urn:ngsi-ld:Smartphone:SMT-25",
+  "type": "Smartphone",
+  "ssid": {
+    "type": "Property",
+    "value": "GDE_HR_WiFi"
+  },
+  "bssid": {
+    "type": "Property",
+    "value": "GDE_HR_WiFi"
+  },
+   "name": {
+    "type": "Property",
+    "value": "Samsung A60"
+  },
+  "website": {
+    "type": "Property",
+    "value": "www.tyt.co.za"
+  },
+  "visitduration": {
+    "type": "Property",
+    "value": "www.tyt.co.za"
+  },
+  "callType": {
+    "type": "Property",
+    "value": "0730005555"
+  } ,
+  "callduration": {
+    "type": "Property",
+    "value": "0730005555"
+  },
+  "phoneNumber": {
+    "type": "Property",
+    "value": "0730005555"
+  },
+  "location": 
+    {
+      "type": "GeoProperty",
+      "value": 
+       {
+       "type": "Point",
+       "coordinates":
+          [
+           (-26.2050000,28.0497220
+          ]
+      },
+      "metadata": {}
+   },
+	"refEmployee": 
+	 {
+	  "type": "Relationship",
+	  "value": "urn:ngsi-ld:Employee:Emp-140"
+	  }
+}
+
+#############2lac ended here-E#############
+###################################################
+
+##################################################### Device Mesurements/ Don't touch real values
+
+
+{
+    
+    "devices": [
+        
+        {
+            "device_id": "smt-1",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-1",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-119"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-2",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-2",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-120"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-3",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-3",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-121"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-4",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-4",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-122"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-5",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-5",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-125"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-6",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-6",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-126"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-7",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-7",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-127"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-8",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-8",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-128"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-9",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-9",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-129"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-10",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-10",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-130"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-11",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-11",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-131"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-12",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-12",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-132"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-13",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-13",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-133"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-14",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-14",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-134"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-15",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-15",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-135"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-16",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-16",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-136"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-17",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-17",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-137"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-18",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-18",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-137"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },
+        {
+            "device_id": "smt-19",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-19",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-138"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        },       
+        {
+            "device_id": "smt-20",
+            "apikey": "gde-tracker-11",
+            "service": "iotgdesimulation",
+            "service_path": "/",
+            "entity_name": "urn:ngsi-ld:Smartphone:SMT-20",
+            "entity_type": "Smartphone",
+            "polling": true,
+            "transport": "HTTP",
+            "attributes": [
+                {
+                    "object_id": "bsid",
+                    "name": "bssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "gps",
+                    "name": "location",
+                    "type": "geo:point"
+                },
+                {
+                    "object_id": "callT",
+                    "name": "callType",
+                    "type": "string"
+                },
+                {
+                    "object_id": "callD",
+                    "name": "callduration",
+                    "type": "string"
+                },
+                {
+                    "object_id": "phoneNo",
+                    "name": "phoneNumber",
+                    "type": "string"
+                },
+                {
+                    "object_id": "sid",
+                    "name": "ssid",
+                    "type": "string"
+                },
+                {
+                    "object_id": "web",
+                    "name": "website",
+                    "type": "string"
+                },
+                {
+                    "object_id": "siteD",
+                    "name": "visitDuration",
+                    "type": "string"
+                }
+            ],
+            "lazy": [],
+            "commands": [],
+            "static_attributes": [
+                {
+                    "name": "refEmployee",
+                    "type": "Relationship",
+                    "value": "urn:ngsi-ld:Employee:Emp-139"
+                }
+            ],
+            "protocol": "PDI-IoTA-UltraLight"
+        }
+    ]
+}
+
+
+############################Services Provision
+curl --location 'http://localhost:4041/iot/services' \
+--header 'fiware-service: iotgpgde' \
+--header 'fiware-servicepath: /' \
+--header 'Content-Type: application/json' \
+--data '{
+ "services": [
+   {
+     "apikey":      "gde-tracker-11",
+     "cbroker":     "http://orion:1026",
+     "entity_type": "smartphones",
+     "resource":    "/iot/d"
+   }
+ ]
+}
+
+########################################## subscription
+
+{       
+        "description": "Notify QuantumLeap for Simulation ",
+        "subject": {
+            "entities": [
+                {
+                    "idPattern": "Smartphone:*"
+                }
+            ],
+            "condition": {
+                "attrs": [
+                   "bssid",
+                    "location",   
+                    "callType",	
+                    "callduration",	
+                    "phoneNumber",
+                    "ssid",
+                    "website",
+                    "visitDuration"
+                ]
+            }
+        },
+        "notification": {
+           "http": {
+      "url": "http://quantumleap:8668/v2/notify"
+    },
+          "attrs": [
+                "bssid",
+                "location",   
+                "callType",	
+                "callduration",	
+                "phoneNumber",
+                "ssid",
+                "website",
+                "visitDuration"
+                ]            
+        }
+ }
+
+################################ Fingerprinting Algorithm
+
+ {
+        "description": "Smartphone fingerpring algorithm subscription",
+        "subject": {
+            "entities": [
+                {
+                    "idPattern": "Smartphone:*",
+                    "type": "Smartphone"
+                }
+            ],
+            "condition": {
+                "attrs": [
+                    "bssid",
+                    "location",
+                    "callType",
+                    "callduration",
+                    "phoneNumber",
+                    "ssid",
+                    "website",
+                    "visitDuration"
+                ],
+                "notifyOnMetadataChange": true
+            }
+        },
+  "notification": {
+    "http": 
+    {
+      "url":  "http://massive.meraka.csir.co.za:4055/fingerprinting"      
+    },
+    "attrsFormat" : "keyValues",
+    "metadata": ["dateCreated", "dateModified"]
+  },
+        "throttling": 1
+ }
+
+
+
+{
+    
+    "description": "Notify QuantumLeap for Simulation ",
+    "status": "active",
+    "subject": {
+        "entities": [
+            {
+                "idPattern": "Smartphone:*"
+            }
+        ],
+        "condition": {
+            "attrs": [
+                "name"
+            ],
+            "notifyOnMetadataChange": true
+        }
+    },
+    "notification": {
+        "timesSent": 196420,
+        "lastNotification": "2025-12-10T16:17:51.000Z",
+        "attrs": [
+            "bssid",
+            "location",
+            "callType",
+            "callduration",
+            "phoneNumber",
+            "ssid",
+            "website",
+            "visitDuration","name"
+        ],
+        "onlyChangedAttrs": false,
+        "attrsFormat": "normalized",
+        "http": {
+            "url": "http://quantumleap:8668/v2/notify"
+        },
+        "lastFailure": "2025-12-10T15:22:24.000Z",
+        "lastFailureReason": "Timeout was reached",
+        "lastSuccess": "2025-12-10T16:17:51.000Z",
+        "lastSuccessCode": 200,
+        "covered": false
+    }
+}
+    
+{
+  "description": "Notify tokenization about changes on PhotovoltaicDevice to validate and send notication to Photovoltaice owner and nano grid",
+  "subject": {
+    "entities": [
+      {
+        "idPattern": "PhotovoltaicDevice:*"
+      }
+    ],
+    "condition": {
+      "attrs": ["NominalPower","location"]
+    }
+  },
+  "notification": {
+    "http": 
+    {
+      "url":  "http://massive.meraka.csir.co.za:5000/calculate-energy"      
+    },
+    "attrsFormat" : "keyValues",
+    "metadata": ["dateCreated", "dateModified"]
+  }
+}
+
+
+############################### Service provision
+
+{
+ "services": [
+   {
+     "apikey":      "gde-tracker-11",
+     "cbroker":     "http://orion:1026",
+     "entity_type": "smartphones",
+     "resource":    "/iot/d"
+   }
+ ]
+}ada
